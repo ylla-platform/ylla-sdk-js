@@ -1,5 +1,5 @@
 {
-  "name": "ylla-sdk",
+  "name": "ylla-sdk-js",
   "version": "1.0.0",
   "description": "Ylla JavaScript SDK",
   "main": "index.js",
