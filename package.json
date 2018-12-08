@@ -4,7 +4,9 @@
   "description": "Ylla JavaScript SDK",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "test": "karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,21 @@
   "bugs": {
     "url": "https://github.com/ylla-platform/ylla-sdk-js/issues"
   },
-  "homepage": "https://github.com/ylla-platform/ylla-sdk-js#readme"
+  "homepage": "https://github.com/ylla-platform/ylla-sdk-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@webpack-cli/migrate": "^0.1.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.3",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-webpack": "^3.0.5",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
